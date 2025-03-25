@@ -1,0 +1,435 @@
+*{
+     margin:0;
+     padding:0; 
+}
+
+
+.nav{
+    color: white;
+    margin: 1px 0px;
+    padding: 2px 3px;
+}
+
+
+
+.navbar{
+     margin: 2px 3px; 
+     padding: 2px 3px; 
+     background-color: black;
+     color: white;
+}
+
+
+
+
+
+/* General styles for the navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+
+
+* Image Section Styles */
+.image-section {
+    background-color: #161515;
+    padding: 50px 20px;
+}
+
+.image-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive image section */
+@media (max-width: 768px) {
+    .image-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content img {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+.image-section {
+    background-color: #080808;
+    padding: 50px 20px;
+}
+
+.image-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h2 {
+    font-size: 32px;
+    color: #ddcece;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    color: #ebe4e4;
+    line-height: 1.6;
+}
+
+/* Responsive image section */
+@media (max-width: 768px) {
+    .image-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content img {
+        margin-bottom: 20px;
+    }
+}
+
+/* 3 Boxes Section */
+.boxes-section {
+    padding: 50px 20px;
+    background-color: #050505;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #201f1f;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive 3 Boxes */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* Image and Text Section */
+.image-text-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Flexbox layout for the content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+.image {
+    flex: 1;
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px; /* Control the max width of the image */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    flex: 1;
+    max-width: 600px; /* Ensures the text block doesn't exceed the max width */
+}
+
+.text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design: Stack the image and text on smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adds space below the image */
+    }
+
+    .text {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section Styles */
+.footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-logo a {
+    font-size: 30px;
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-logo a:hover {
+    color: #ff9f00;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    display:inline-block;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6347;
+}
+
+/* Footer Social Icons */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ff6347;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ff9f00;
+    transform: translateY(-5px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
