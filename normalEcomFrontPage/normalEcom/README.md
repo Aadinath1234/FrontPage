@@ -26,8 +26,11 @@ To get started with **RastekaMaalSasteme**, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/rastekamaalsasteme.git
-   cd rastekamaalsasteme
+   git clone https://github.com/Aadinath1234/FrontPage.git
+   cd tree/main/normalEcomFrontPage/normalEcom
+   
+
+   
    ```
 
 2. **Install dependencies**:
