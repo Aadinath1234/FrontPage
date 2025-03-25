@@ -49,7 +49,7 @@ To get started with **FurnitureWalaa**, follow these steps:
    npm run dev
    ```
 
-   This will start the Vite development server. Open [http://localhost:3000](http://localhost:3000) to view the project.
+   This will start the Vite development server. Open [http://localhost:5173](http://localhost:5173) to view the project.
 
 ## 🔧 **How It Works**
 
